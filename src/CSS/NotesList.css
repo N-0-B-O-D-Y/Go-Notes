@@ -1,0 +1,74 @@
+.notes-list{
+    max-width: 600px;
+    margin: 20px auto;
+    display: grid;
+    gap: 12px;
+}
+
+.note-card{
+    background: #242424;
+    padding: 12px;
+    border-radius: 6px;
+    border-left: 4px solid rgba(83, 91, 242, 0.85);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.note-card h3{
+    margin: 0 0 6px;
+    text-transform: capitalize;
+    background: linear-gradient(to right, firebrick, rebeccapurple);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.3rem;
+}
+
+.note-card p{
+    background: linear-gradient(to right, grey, darkcyan, gray);
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.1rem;
+}
+
+
+.no-notes{
+     text-align: center;
+    font-style: italic;
+     color: #888;
+ }
+
+.date{
+    background: #242424;
+    -webkit-background-clip: revert;
+    color: #888;
+    -webkit-text-fill-color: #888;
+    font-size: 12px;
+}
+
+.note-actions{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.editIcon{
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.deleteIcon{
+    color: darkred;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.deleteIcon:hover{
+    box-shadow: 0 0 10px rgba(139, 0, 0, 1);
+    transform: scale(1.2);
+}
+
+.editIcon:hover{
+    box-shadow: 0 0 10px rgba(0, 140, 255, 0.9);
+    transform: scale(1.2);
+}
