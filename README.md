@@ -46,7 +46,7 @@
 ## Getting Started
 
 ```bash
-git clone https://github.com/N-0-B-O-D-Y/Go-Notes.git
-cd note-app
+git clone https://github.com/N-0-B-O-D-Y/go-Notes.git
+cd go-Notes
 npm install
 npm start
