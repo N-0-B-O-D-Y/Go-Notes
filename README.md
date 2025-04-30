@@ -19,7 +19,7 @@
 
 ## Styling Approach
 
-- Written in plain CSS (index.css)
+- Written in plain CSS
 - Clean layout with form, list, and navigation styles
 - Responsive design using basic Flex/Grid layouts
 
