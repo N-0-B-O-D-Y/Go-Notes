@@ -12,7 +12,7 @@ export default function NotesList({notes, deleteNote, editNote}) {
                     notes.map((note)=>(
                         <div key={note.id} className='note-card'>
                             <h3>{note.title}</h3>
-                            <p>{note.content}<br/>
+                            <p style={{whiteSpace:'pre-wrap'}}>{note.content}<br/>
                                 <small className='date'>
                                     {new Date(note.createdAt).toLocaleDateString()}
                                 </small>
