@@ -6,7 +6,8 @@
     border-radius: 8px;
     max-width: 400px;
     margin: 20px auto;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    background-color: #242424;
+    box-shadow: 0 0 20px #7b64f6;
 }
 
 .add-note-form h2{
@@ -24,6 +25,7 @@
     border-radius: 6px;
     outline: none;
     color: darkgoldenrod;
+    background-color: #000;
 }
 
 .add-note-form textarea{
