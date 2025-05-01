@@ -1,4 +1,5 @@
 import './App.css'
+import ParticlesBackground from "./ParticlesBackground.jsx";
 import AddNote from './Components/AddNote.jsx';
 import NotesList from './Components/NotesList.jsx';
 import {getNotes, saveNotes} from "./utils/storage.js";
@@ -50,20 +51,24 @@ function App() {
         }
     };
   return (
-      <>
-          <h1 className='h1-heading'>Note App</h1>
-          <div className='app-container'>
-              <nav className='app-nav'>
-                  {view === 'list' ?<button onClick={()=>setView('add')}>Add Note</button>:<button onClick={()=>setView('list')}>View Notes</button>}
-              </nav>
-              {error && <p className='error-msg'>{error}</p>}
-              {
-                  view === 'add'?(
-                      <AddNote onAdd={handleAddNote} editNote={editNote}/>
-                  ):(<NotesList notes={notes} deleteNote={handleDeleteNote} editNote={handleEditNote} />)
-              }
+      <div style={{position:'relative', width:'100%', height:'100%'}}>
+          <ParticlesBackground />
+
+          <div style={{position:'relative', zIndex:'1', textAlign:'center'}}>
+              <h1 className='h1-heading'>Note App</h1>
+              <div className='app-container'>
+                  <nav className='app-nav'>
+                      {view === 'list' ?<button onClick={()=>setView('add')}>Add Note</button>:<button onClick={()=>setView('list')}>View Notes</button>}
+                  </nav>
+                  {error && <p className='error-msg'>{error}</p>}
+                  {
+                      view === 'add'?(
+                          <AddNote onAdd={handleAddNote} editNote={editNote}/>
+                      ):(<NotesList notes={notes} deleteNote={handleDeleteNote} editNote={handleEditNote} />)
+                  }
+              </div>
           </div>
-      </>
+      </div>
   );
 }
 
